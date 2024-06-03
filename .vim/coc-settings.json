@@ -1,0 +1,7 @@
+// vim: filetype=jsonc
+{
+	"eslint.autoFixOnSave": true,
+	"eslint.packageManager": "yarn",
+	"volar.disableFormatting": true,
+	"typescript.format.enable": false
+}
