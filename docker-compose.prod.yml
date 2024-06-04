@@ -2,17 +2,11 @@ version: '3'
 
 services:
   books:
-    image: ghcr.io/pglaum/books:main
+    image: ghcr.io/pglaum/hn-nuxt:main
     build:
       context: ./
       dockerfile: Dockerfile
-      args:
-        - SUPABASE_URL=${SUPABASE_URL}
-        - SUPABASE_KEY=${SUPABASE_KEY}
     restart: unless-stopped
-    environment:
-      SUPABASE_URL: ${SUPABASE_URL}
-      SUPABASE_KEY: ${SUPABASE_KEY}
     networks:
       - swarm-proxy
 
