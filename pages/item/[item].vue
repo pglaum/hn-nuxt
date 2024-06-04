@@ -34,6 +34,9 @@
                     {{ hnStory.points }} Points
                 </div>
                 <div>
+                    {{ hnStory.author }}
+                </div>
+                <div>
                     {{ hnStory.created_at }}
                 </div>
             </div>
