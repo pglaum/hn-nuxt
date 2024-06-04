@@ -23,7 +23,7 @@
 
             <NuxtLink
                 :href="hnStory.url"
-                class="text-primary visited:text-muted-foreground"
+                class="break-all text-primary visited:text-muted-foreground"
             >
                 {{ hnStory.url }}
                 <ExternalLink class="inline size-4 -translate-y-0.5" />
