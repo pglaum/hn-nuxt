@@ -12,11 +12,13 @@
   "dependencies": {
     "@internationalized/date": "^3.5.3",
     "@pinia/nuxt": "^0.5.1",
+    "@types/jsdom": "^21.1.7",
     "@unovis/ts": "^1.4.0",
     "@unovis/vue": "^1.4.0",
     "@vueuse/core": "^10.9.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "jsdom": "^24.1.0",
     "lucide-vue-next": "^0.372.0",
     "nuxt": "^3.11.2",
     "radix-vue": "^1.7.4",

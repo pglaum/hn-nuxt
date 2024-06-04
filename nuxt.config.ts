@@ -34,7 +34,6 @@ export default defineNuxtConfig({
         payloadExtraction: false,
     },
     modules: [
-        '@nuxtjs/supabase',
         '@nuxtjs/tailwindcss',
         '@pinia/nuxt',
         'shadcn-nuxt',
@@ -51,23 +50,5 @@ export default defineNuxtConfig({
     shadcn: {
         prefix: '',
         componentDir: './components/ui',
-    },
-    supabase: {
-        clientOptions: {
-            db: {
-                schema: process.env.NUXT_PUBLIC_SCHEMA ?? 'books',
-            },
-        },
-        redirectOptions: {
-            login: '/login',
-            callback: '/confirm',
-            exclude: [
-                '/login',
-                '/register',
-                '/forgot-password',
-                '/reset-password',
-            ],
-            cookieRedirect: true,
-        },
     },
 })
