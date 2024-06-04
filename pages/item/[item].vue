@@ -37,7 +37,7 @@
                     {{ hnStory.author }}
                 </div>
                 <div>
-                    {{ hnStory.created_at }}
+                    {{ formatDate(hnStory.created_at, 'P p') }}
                 </div>
             </div>
 
@@ -53,6 +53,7 @@
 </template>
 
 <script setup lang="ts">
+import { formatDate, } from 'date-fns'
 import { ExternalLink, Loader2, } from 'lucide-vue-next'
 
 import type { Item, } from '~/lib/entities/item'

@@ -5,7 +5,9 @@
                 <div class="text-primary">
                     {{ comment.author }}
                 </div>
-                {{ comment.created_at }}
+                <div :title="formatDate(comment.created_at, 'P p')">
+                    {{ formatDistanceToNow(comment.created_at) }} ago
+                </div>
 
                 <button
                     v-if="!collapsedStore.isCollapsed(comment.id)"
@@ -69,6 +71,7 @@
 </template>
 
 <script setup lang="ts">
+import { formatDate, formatDistanceToNow, } from 'date-fns'
 import { ChevronsDownUp, ChevronsUpDown, } from 'lucide-vue-next'
 
 import type { Item, } from '~/lib/entities/item'
