@@ -32,7 +32,7 @@
                 </NuxtLink>
                 <NuxtLink
                     :href="article.link"
-                    class="text-ellipsis text-primary visited:text-muted-foreground"
+                    class="break-all text-primary visited:text-muted-foreground"
                 >
                     {{ article.link }}
                     <ExternalLink class="inline size-4 -translate-y-0.5" />

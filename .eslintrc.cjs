@@ -144,8 +144,9 @@ module.exports = {
             {
                 config: './tailwind.config.js',
                 whitelist: [
-                    'drag(.*_?)',
                     'calendar',
+                    'comment-text',
+                    'drag(.*_?)',
                     'handle',
                 ],
             },

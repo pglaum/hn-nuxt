@@ -56,7 +56,6 @@ import type { Item, } from '~/lib/entities/item'
 
 const route = useRoute()
 const { data: hnStory, pending, error, }: {data: Ref<Item|null>, pending: Ref<boolean>, error: Ref<Error|null>} = await useFetch(`https://hn.algolia.com/api/v1/items/${route.params.item}`)
-console.log(hnStory)
 
 useHead({
     title: 'Hacker News',
