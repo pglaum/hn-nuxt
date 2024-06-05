@@ -1,5 +1,5 @@
 <template>
-    <div class="container my-24 grid max-w-3xl gap-8">
+    <div class="container my-8 grid max-w-3xl gap-8">
         <Alert
             v-if="error"
             variant="destructive"

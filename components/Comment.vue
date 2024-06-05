@@ -1,7 +1,10 @@
 <template>
     <div>
         <div>
-            <div class="flex flex-wrap items-center gap-1 text-sm text-muted-foreground">
+            <div
+                :id="`comment-${comment.id}`"
+                class="flex flex-wrap items-center gap-1 text-sm text-muted-foreground"
+            >
                 <div class="text-primary">
                     {{ comment.author }}
                 </div>

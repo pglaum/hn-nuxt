@@ -1,6 +1,6 @@
 <template>
     <div class="flex min-h-screen flex-col">
-        <div class="container sticky top-0 z-10 flex items-center justify-between py-4 backdrop-blur-md">
+        <div class="container max-w-3xl py-4">
             <NuxtLink
                 to="/"
                 class="inline-flex
@@ -11,6 +11,10 @@
                     uppercase
                     text-muted-foreground"
             >
+                <img
+                    src="/favicon.png"
+                    class="size-5"
+                >
                 hacker news
             </NuxtLink>
         </div>

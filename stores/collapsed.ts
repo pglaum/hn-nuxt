@@ -13,6 +13,10 @@ export const useCollapsedStore = defineStore('collapsed', {
                 return
             }
             this.collapsed.push(id)
+            const el = document.getElementById(`comment-${id}`)
+            if (el) {
+                el.scrollIntoView({ behavior:'smooth', })
+            }
         },
         expand (id: Number) {
             if (!this.collapsed.includes(id)) {
