@@ -8,9 +8,14 @@
                 <div class="text-primary">
                     {{ comment.author }}
                 </div>
-                <div :title="formatDate(comment.created_at, 'P p')">
-                    {{ formatDistanceToNow(comment.created_at) }} ago
-                </div>
+                <Popover>
+                    <PopoverTrigger class="cursor-help border-b border-dotted">
+                        {{ formatDistanceToNow(comment.created_at) }} ago
+                    </PopoverTrigger>
+                    <PopoverContent side="top">
+                        {{ formatDate(comment.created_at, 'P p') }}
+                    </PopoverContent>
+                </Popover>
 
                 <button
                     v-if="!collapsedStore.isCollapsed(comment.id)"
