@@ -12,8 +12,8 @@
                     text-muted-foreground"
             >
                 <img
-                    src="/favicon.png"
-                    class="size-5"
+                    src="/favicon.svg"
+                    class="size-6"
                 >
                 hacker news
             </NuxtLink>
